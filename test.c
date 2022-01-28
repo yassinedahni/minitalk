@@ -44,5 +44,4 @@ int main()
     signal(SIGUSR2, frecuns);
     ft_putnbr(getpid());
     while (1);
-    return 0;
 }
