@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 18:33:08 by ydahni            #+#    #+#             */
-/*   Updated: 2022/02/11 18:36:24 by ydahni           ###   ########.fr       */
+/*   Updated: 2022/02/11 22:13:22 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,8 @@ int	main(int ac, char **av)
 	if (ac == 3)
 	{
 		pid = ft_atoi(av[1]);
+		if (pid <= 0)
+			return (0);
 		while (av[2][i])
 		{
 			couvert(pid, av[2][i]);
